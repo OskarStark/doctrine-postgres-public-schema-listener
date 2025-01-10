@@ -1,7 +1,7 @@
 {
     "name": "oskarstark/doctrine-postgres-public-schema-listener",
     "type": "library",
-    "description": "Doctrine Type Testcases",
+    "description": "An Migration EventSubscriber which ensures public namespace is only added if needed",
     "license": "MIT",
     "authors": [
         {
@@ -11,19 +11,22 @@
     ],
     "require": {
         "php": ">=8.0",
-        "doctrine/event-manager": "^1.1",
+        "doctrine/event-manager": "^1.1 || ^2.0",
         "doctrine/orm": "^2.12",
-        "doctrine/dbal": "^2.13"
+        "doctrine/dbal": "^2.13 || ^3.3"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.2",
         "ergebnis/test-util": "^1.5",
         "friendsofphp/php-cs-fixer": "^2.19",
-        "phpstan/phpstan": "^0.12.14",
+        "phpstan/phpstan": "^1.7",
         "phpunit/phpunit": "^9.5"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
     },
     "autoload": {
         "psr-4": {
