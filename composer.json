@@ -1,5 +1,5 @@
 {
-    "name": "datana-gmbh/doctrine-postgres-public-schema-listener",
+    "name": "oskarstark/doctrine-postgres-public-schema-listener",
     "type": "library",
     "description": "Doctrine Type Testcases",
     "license": "MIT",
