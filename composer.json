@@ -30,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Datana\\Doctrine\\EventSubscriber\\": "src/"
+            "OskarStark\\Doctrine\\EventSubscriber\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Datana\\Doctrine\\EventSubscriber\\Tests\\": "tests/"
+            "OskarStark\\Doctrine\\EventSubscriber\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable",
