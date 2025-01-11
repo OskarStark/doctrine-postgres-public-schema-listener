@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace OskarStark\Doctrine\EventSubscriber\Tests\Unit;
 
-use Datana\Doctrine\EventSubscriber\MigrationEventSubscriber;
+use OskarStark\Doctrine\EventSubscriber\MigrationEventSubscriber;
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\ORM\Tools\Event\GenerateSchemaEventArgs;
 use PHPUnit\Framework\TestCase;
