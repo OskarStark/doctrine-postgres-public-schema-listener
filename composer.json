@@ -1,8 +1,12 @@
 {
     "name": "oskarstark/doctrine-postgres-public-schema-listener",
-    "type": "library",
     "description": "An migration EventSubscriber which ensures public namespace is only added if needed",
     "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "dev",
+        "doctrine"
+    ],
     "authors": [
         {
             "name": "Oskar Stark",
@@ -11,9 +15,9 @@
     ],
     "require": {
         "php": ">=8.1",
+        "doctrine/dbal": "^2.13 || ^3.3",
         "doctrine/event-manager": "^1.1 || ^2.0",
-        "doctrine/orm": "^2.12 || ^3.0",
-        "doctrine/dbal": "^2.13 || ^3.3"
+        "doctrine/orm": "^2.12 || ^3.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.2",
@@ -22,12 +26,7 @@
         "phpstan/phpstan": "^1.7",
         "phpunit/phpunit": "^9.5"
     },
-    "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "ergebnis/composer-normalize": true
-        }
-    },
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "OskarStark\\Doctrine\\EventSubscriber\\": "src/"
@@ -38,7 +37,12 @@
             "OskarStark\\Doctrine\\EventSubscriber\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "sort-packages": true
+    },
     "scripts": {
         "cs": [
             "vendor/bin/php-cs-fixer fix"
