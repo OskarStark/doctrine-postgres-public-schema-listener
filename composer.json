@@ -3,6 +3,7 @@
     "type": "library",
     "description": "An migration EventSubscriber which ensures public namespace is only added if needed",
     "license": "MIT",
+    "keywords": ["dev", "doctrine"],
     "authors": [
         {
             "name": "Oskar Stark",
