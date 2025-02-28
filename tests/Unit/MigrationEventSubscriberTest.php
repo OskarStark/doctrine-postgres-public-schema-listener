@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace OskarStark\Doctrine\EventSubscriber\Tests\Unit;
 
-use OskarStark\Doctrine\EventSubscriber\MigrationEventSubscriber;
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\ORM\Tools\Event\GenerateSchemaEventArgs;
+use OskarStark\Doctrine\EventSubscriber\MigrationEventSubscriber;
 use PHPUnit\Framework\TestCase;
 
 /**
