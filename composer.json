@@ -18,7 +18,7 @@
     "require-dev": {
         "ergebnis/composer-normalize": "^2.2",
         "ergebnis/test-util": "^1.5",
-        "friendsofphp/php-cs-fixer": "^2.19",
+        "friendsofphp/php-cs-fixer": "^3",
         "phpstan/phpstan": "^1.7",
         "phpunit/phpunit": "^9.5"
     },
@@ -44,7 +44,7 @@
             "vendor/bin/php-cs-fixer fix"
         ],
         "cs-check": [
-            "vendor/bin/php-cs-fixer fix --diff --diff-format=udiff --dry-run --verbose"
+            "vendor/bin/php-cs-fixer fix --diff --dry-run --verbose"
         ],
         "phpstan": [
             "@php -d memory_limit=-1 vendor/bin/phpstan analyse --configuration phpstan.neon --no-progress"

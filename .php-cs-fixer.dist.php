@@ -14,36 +14,36 @@ $finder = PhpCsFixer\Finder::create()
     ->in('tests')
 ;
 
-return PhpCsFixer\Config::create()
+return (new PhpCsFixer\Config())
     ->setRiskyAllowed(true)
     ->setRules([
         '@Symfony' => true,
         'array_syntax' => ['syntax' => 'short'],
-        'blank_line_before_statement' => [
-            'statements' => [
-                'break',
-                'continue',
-                'declare',
-                'default',
-                'die',
-                'do',
-                'exit',
-                'for',
-                'foreach',
-                'goto',
-                'if',
-                'include',
-                'include_once',
-                'require',
-                'require_once',
-                'return',
-                'switch',
-                'throw',
-                'try',
-                'while',
-            ],
-        ],
-        'compact_nullable_typehint' => true,
+//        'blank_line_before_statement' => [
+//            'statements' => [
+//                'break',
+//                'continue',
+//                'declare',
+//                'default',
+//                'die',
+//                'do',
+//                'exit',
+//                'for',
+//                'foreach',
+//                'goto',
+//                'if',
+//                'include',
+//                'include_once',
+//                'require',
+//                'require_once',
+//                'return',
+//                'switch',
+//                'throw',
+//                'try',
+//                'while',
+//            ],
+//        ],
+        'compact_nullable_type_declaration' => true,
         'declare_strict_types' => true,
         'header_comment' => [
             'header' => $header,
@@ -75,8 +75,7 @@ return PhpCsFixer\Config::create()
             'call_type' => 'self',
         ],
         'phpdoc_no_empty_return' => true,
-        'psr0' => true,
-        'psr4' => true,
+        'psr_autoloading' => true,
         'return_assignment' => false,
         'single_line_throw' => false,
         'strict_comparison' => true,
