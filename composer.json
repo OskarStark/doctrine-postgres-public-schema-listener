@@ -1,7 +1,7 @@
 {
     "name": "oskarstark/doctrine-postgres-public-schema-listener",
     "type": "library",
-    "description": "An Migration EventSubscriber which ensures public namespace is only added if needed",
+    "description": "An migration EventSubscriber which ensures public namespace is only added if needed",
     "license": "MIT",
     "authors": [
         {
